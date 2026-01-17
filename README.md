@@ -1,10 +1,24 @@
-# 💫 About Me:
-🔭 I’m currently working on<br>👯 I’m looking to collaborate on<br>🤝 I’m looking for help with<br>🌱 I’m currently learning<br>💬 Ask me about<br>⚡ Fun fact
+# 💫 About Me
+I am a software engineer on a mission to master the full lifecycle of modern applications. Currently, I am bridging the gap between Phase 1 (Frontend) and Phase 2 (Backend) of my development journey, with a strong focus on building responsive UIs using React.js and Tailwind CSS, while architecting robust server-side logic with Java. I don't just want to build apps that look good; I want to understand how they talk to the database, how they scale in the cloud, and how they stay secure.
+
+My passion lies in system architecture and automation. Following my structured learning pathway, I am moving beyond simple coding into Phase 3 (Infrastructure), where I explore the power of Docker, AWS, and CI/CD pipelines. My ultimate goal is to reach Phase 4 (Expert Level), evolving into a Full-Stack Engineer who specializes in DevSecOps and system reliability. I am a firm believer in "learning by doing," and I am constantly seeking challenges that force me to dive deeper into the terminal, optimize a database query, or secure a cloud environment.
+
+🔭 I’m currently working on Merging Phase 1 and 2: Developing a full-stack application using React.js for the frontend and Java (Spring Boot) for the backend, focusing on building efficient REST APIs.
+
+👯 I’m looking to collaborate on Open-source projects that involve Tailwind CSS components or Java-based microservices. I’m eager to contribute to repositories that have a clear CI/CD structure.
+
+🤝 I’m looking for help with Phase 3 (Infrastructure): Specifically, best practices for Dockerizing Java applications and setting up automated deployment pipelines using GitHub Actions.
+
+🌱 I’m currently learning Deep-diving into Node.js and Express to broaden my backend versatility, while exploring PostgreSQL for complex relational data modeling.
+
+💬 Ask me about JavaScript ES6+ logic, React hooks, or why I chose Java for enterprise-grade stability. I can also talk about my journey through the Linux command line.
+
+⚡ Fun fact I view my career like a deployment pipeline: I’m currently in the Build phase, constantly Testing new technologies, so I can eventually Deploy myself as a Senior DevSecOps Architect!
 
 
 
 ## 🌐 Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/Amrita Sagar) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/amrita.sagar5:00) 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/Amrita Sagar) 
 
 <div align="center">
   <img src="https://profile-readme-generator.com/assets/snake.svg" alt="Snake animation" />
