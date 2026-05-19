@@ -145,20 +145,7 @@ amrita = {
 ## ✍️ Latest from my Substack
 
 <!-- SUBSTACK_POSTS_START -->
-📝 **[Why I'm committing to backend + cloud + AI engineering in 2026](https://amritasagardevops.substack.com)**
-  > My 9-month plan, the skills I'm targeting, and what I shipped in week 1. Starting publicly because accountability works.
-  `May 19, 2026`
-
-📝 **[Building a production FastAPI template from scratch](https://amritasagardevops.substack.com)**
-  > What no tutorial covers — project structure, async sessions, Alembic migrations, and why your local setup should mirror production.
-  `May 12, 2026`
-
-📝 **[JWT refresh tokens done right — Redis blacklisting and the pitfalls](https://amritasagardevops.substack.com)**
-  > Three bugs I hit implementing refresh token rotation and exactly how I fixed each one.
-  `May 05, 2026`
-
-> 🔄 *Auto-updated daily via GitHub Actions · [Read all posts →](https://amritasagardevops.substack.com)*
-
+> ⚠️ Could not load posts — check back soon.
 <!-- SUBSTACK_POSTS_END -->
 
 ---
