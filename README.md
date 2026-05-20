@@ -145,7 +145,19 @@ amrita = {
 ## ✍️ Latest from my Substack
 
 <!-- SUBSTACK_POSTS_START -->
-> ⚠️ Could not load posts — check back soon.
+
+> 🚀 **My build-in-public blog is live on Substack!**
+> First post dropping soon — covering my 9-month journey to become a
+> Backend + Cloud + AI engineer. Follow along at [https://amritasagardevops.substack.com](https://amritasagardevops.substack.com)
+
+| What's coming | |
+|---|---|
+| 📝 Week 1 | Why I'm committing to this 9-month engineering sprint |
+| ☁️ Week 2 | Building a production FastAPI project from scratch |
+| 🤖 Week 3 | What I learned deploying my first Docker container |
+
+> 🔄 *Auto-updates when posts go live · [Follow on Substack →](https://amritasagardevops.substack.com)*
+
 <!-- SUBSTACK_POSTS_END -->
 
 ---
