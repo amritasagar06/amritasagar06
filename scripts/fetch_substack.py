@@ -1,132 +1,128 @@
 """
-fetch_substack.py
------------------
-Fetches the latest 3 posts from Amrita's Substack RSS feed
-and updates the README.md between the markers:
-  <!-- SUBSTACK_POSTS_START -->
-  <!-- SUBSTACK_POSTS_END -->
-
-Run locally:  python scripts/fetch_substack.py
-Run by CI:    automatically via GitHub Actions
+fetch_substack.py  v2
+---------------------
+Fetches latest 3 posts from Substack RSS.
+- Tries multiple URL formats automatically
+- Shows "coming soon" placeholder if no posts published yet
+- Never shows the ugly warning message
 """
 
-import re
-import sys
+import re, sys
 from datetime import datetime
 
 try:
     import feedparser
 except ImportError:
-    print("ERROR: feedparser not installed. Run: pip install feedparser")
+    print("ERROR: feedparser not installed.")
     sys.exit(1)
 
 # ── Config ────────────────────────────────────────────────────────────────────
-SUBSTACK_RSS  = "https://amritasagardevops.substack.com/feed"
-README_PATH   = "README.md"
-MAX_POSTS     = 3
-START_MARKER  = "<!-- SUBSTACK_POSTS_START -->"
-END_MARKER    = "<!-- SUBSTACK_POSTS_END -->"
+SUBSTACK_USERNAME = "amritasagardevops"   # ← only change this if username changes
+README_PATH       = "README.md"
+MAX_POSTS         = 3
+START_MARKER      = "<!-- SUBSTACK_POSTS_START -->"
+END_MARKER        = "<!-- SUBSTACK_POSTS_END -->"
+SUBSTACK_URL      = f"https://{SUBSTACK_USERNAME}.substack.com"
 
-EMOJI_CYCLE   = ["📝", "🔧", "☁️", "🤖", "⚡", "🚀", "🏗️", "🔍"]
+# All formats Substack has ever used — tried in order
+RSS_CANDIDATES = [
+    f"https://{SUBSTACK_USERNAME}.substack.com/feed",
+    f"https://{SUBSTACK_USERNAME}.substack.com/feed.xml",
+    f"https://{SUBSTACK_USERNAME}.substack.com/rss",
+    f"https://substack.com/@{SUBSTACK_USERNAME}/feed",
+]
 
-# ── Fetch feed ────────────────────────────────────────────────────────────────
+EMOJIS = ["📝", "🔧", "☁️", "🤖", "⚡", "🚀"]
+
+# ── Placeholder shown before first post is published ──────────────────────────
+PLACEHOLDER = f"""{START_MARKER}
+
+> 🚀 **My build-in-public blog is live on Substack!**
+> First post dropping soon — covering my 9-month journey to become a
+> Backend + Cloud + AI engineer. Follow along at [{SUBSTACK_URL}]({SUBSTACK_URL})
+
+| What's coming | |
+|---|---|
+| 📝 Week 1 | Why I'm committing to this 9-month engineering sprint |
+| ☁️ Week 2 | Building a production FastAPI project from scratch |
+| 🤖 Week 3 | What I learned deploying my first Docker container |
+
+> 🔄 *Auto-updates when posts go live · [Follow on Substack →]({SUBSTACK_URL})*
+
+{END_MARKER}"""
+
+# ── Fetch ─────────────────────────────────────────────────────────────────────
 def fetch_posts():
-    print(f"Fetching RSS feed: {SUBSTACK_RSS}")
-    feed = feedparser.parse(SUBSTACK_RSS)
+    for url in RSS_CANDIDATES:
+        print(f"Trying: {url}")
+        try:
+            feed = feedparser.parse(url)
+            if feed.entries:
+                print(f"  ✅ Found {len(feed.entries)} posts at {url}")
+                return feed.entries[:MAX_POSTS]
+            else:
+                print(f"  ⚠️  Feed reachable but empty (no posts published yet)")
+        except Exception as e:
+            print(f"  ❌ Error: {e}")
+    return []
 
-    if not feed.entries:
-        print("WARNING: No entries found. Feed may be empty or unavailable.")
-        return []
+# ── Build markdown ────────────────────────────────────────────────────────────
+def build_block(entries):
+    if not entries:
+        print("No posts found — using placeholder content.")
+        return PLACEHOLDER
 
-    posts = []
-    for i, entry in enumerate(feed.entries[:MAX_POSTS]):
-        title   = entry.get("title", "Untitled").strip()
-        link    = entry.get("link", "#").strip()
-        summary = entry.get("summary", "").strip()
-
-        # Clean HTML tags from summary
-        summary = re.sub(r"<[^>]+>", "", summary)
-        summary = summary[:120].strip()
-        if len(summary) > 119:
+    lines = [START_MARKER, ""]
+    for i, e in enumerate(entries):
+        title   = e.get("title", "Untitled").strip()
+        link    = e.get("link", SUBSTACK_URL).strip()
+        summary = re.sub(r"<[^>]+>", "", e.get("summary", "")).strip()[:130]
+        if len(summary) > 129:
             summary += "..."
 
-        # Parse date
-        published = entry.get("published_parsed")
-        if published:
-            date_str = datetime(*published[:6]).strftime("%b %d, %Y")
-        else:
-            date_str = "Recent"
+        pub = e.get("published_parsed")
+        date = datetime(*pub[:6]).strftime("%b %d, %Y") if pub else "Recent"
 
-        emoji = EMOJI_CYCLE[i % len(EMOJI_CYCLE)]
-        posts.append({
-            "title":   title,
-            "link":    link,
-            "summary": summary,
-            "date":    date_str,
-            "emoji":   emoji,
-        })
-        print(f"  ✓ Found: {title} ({date_str})")
-
-    return posts
-
-# ── Build markdown block ──────────────────────────────────────────────────────
-def build_markdown(posts):
-    if not posts:
-        return (
-            f"{START_MARKER}\n"
-            "> ⚠️ Could not load posts — check back soon.\n"
-            f"{END_MARKER}"
-        )
-
-    lines = [START_MARKER]
-    lines.append("")  # blank line after marker
-
-    for p in posts:
-        lines.append(f"{p['emoji']} **[{p['title']}]({p['link']})**")
-        if p["summary"]:
-            lines.append(f"  > {p['summary']}")
-        lines.append(f"  `{p['date']}`")
+        emoji = EMOJIS[i % len(EMOJIS)]
+        lines.append(f"{emoji} **[{title}]({link})**")
+        if summary:
+            lines.append(f"  > {summary}")
+        lines.append(f"  `{date}`")
         lines.append("")
 
-    # Auto-update timestamp (Singapore time approximation)
-    timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
+    ts = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
     lines.append(
-        f"> 🔄 *Auto-updated {timestamp} via GitHub Actions · "
-        f"[Read all posts →](https://amritasagardevops.substack.com)*"
+        f"> 🔄 *Auto-updated {ts} · [Read all posts →]({SUBSTACK_URL})*"
     )
     lines.append("")
     lines.append(END_MARKER)
-
     return "\n".join(lines)
 
-# ── Update README ─────────────────────────────────────────────────────────────
-def update_readme(new_block):
+# ── Write README ──────────────────────────────────────────────────────────────
+def update_readme(block):
     with open(README_PATH, "r", encoding="utf-8") as f:
         content = f.read()
 
     if START_MARKER not in content or END_MARKER not in content:
-        print("ERROR: Markers not found in README.md")
-        print(f"  Add these two lines to your README where you want posts to appear:")
-        print(f"  {START_MARKER}")
-        print(f"  {END_MARKER}")
+        print("ERROR: Markers not found in README.md — make sure both markers exist.")
         sys.exit(1)
 
     pattern = re.compile(
         re.escape(START_MARKER) + r".*?" + re.escape(END_MARKER),
         re.DOTALL
     )
+    updated = pattern.sub(block, content)
 
-    updated = pattern.sub(new_block, content)
+    with open(README_PATH, "w", encoding="utf-8") as f:
+        f.write(updated)
 
     if updated == content:
-        print("README unchanged — posts are already up to date.")
+        print("README unchanged — already up to date.")
     else:
-        with open(README_PATH, "w", encoding="utf-8") as f:
-            f.write(updated)
-        print("✅ README.md updated successfully.")
+        print("✅ README.md updated.")
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
-    posts    = fetch_posts()
-    block    = build_markdown(posts)
+    entries = fetch_posts()
+    block   = build_block(entries)
     update_readme(block)
