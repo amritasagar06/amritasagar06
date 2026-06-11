@@ -94,19 +94,7 @@ Shipping backend and AI/MLOps projects every week and writing about the build in
 
 ---
 
-## GitHub Stats
 
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=amritasagar&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=818cf8&icon_color=38bdf8&text_color=c9d1d9)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=amritasagar&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=818cf8&text_color=c9d1d9&langs_count=8)
-
-![GitHub Streak](https://streak-stats.demolab.com?user=amritasagar&theme=github-dark-blue&hide_border=true&background=0d1117&ring=818cf8&fire=38bdf8&currStreakLabel=818cf8)
-
-</div>
-
----
 
 <div align="center">
 
