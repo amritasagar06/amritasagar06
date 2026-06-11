@@ -1,172 +1,102 @@
-<!-- ══════════════════════════════════════════════════════════════
-     AMRITA SAGAR — GitHub Profile README
-     Repo name must exactly match your GitHub username to show
-     on your profile. Auto-updates Substack posts daily via
-     GitHub Actions — see .github/workflows/update-substack.yml
-     ══════════════════════════════════════════════════════════ -->
-
 <div align="center">
 
-# Hey, I'm Amrita Sagar 👋
+# Amrita Sagar
 
-### Backend Engineer · Python · Java · JavaScript · AWS · Building AI-Powered Systems
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&duration=3000&pause=1000&color=818CF8&center=true&vCenter=true&repeat=true&width=640&lines=Backend+Engineer+%E2%80%94+Python+%C2%B7+Java+%C2%B7+JavaScript;Building+AI-Powered+APIs+%26+Cloud+Systems;36+Projects+%C2%B7+3+Certifications+%C2%B7+Shipping+Weekly;Open+to+Roles+in+Singapore+%26+Remote)](https://git.io/typing-svg)
+### Backend & Cloud Developer · Python · Go · Java · AWS · Kubernetes · MLOps
+#### Building Distributed Systems That Serve AI at Scale
 
 <br/>
 
+[![AI/ML](https://img.shields.io/badge/AI%2FML_Engineering-534AB7?style=flat-square)](https://github.com/amritasagar)
+[![MLOps](https://img.shields.io/badge/MLOps-534AB7?style=flat-square)](https://github.com/amritasagar)
+[![Cloud-Native](https://img.shields.io/badge/Cloud--Native-185FA5?style=flat-square)](https://github.com/amritasagar)
+[![Distributed Systems](https://img.shields.io/badge/Distributed_Systems-0F6E56?style=flat-square)](https://github.com/amritasagar)
 [![Location](https://img.shields.io/badge/📍_Singapore-1c2128?style=flat-square&color=1c2128)](https://www.linkedin.com/in/amrita-sagar-7372572b2)
 [![Open to Work](https://img.shields.io/badge/🟢_Open_to_Opportunities-0d4a26?style=flat-square&color=0d4a26)](https://www.linkedin.com/in/amrita-sagar-7372572b2)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Amrita_Sagar-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/amrita-sagar-7372572b2)
-[![Substack](https://img.shields.io/badge/Substack-amritasagardevops-FF6719?style=flat-square&logo=substack&logoColor=white)](https://amritasagardevops.substack.com)
-[![SCS](https://img.shields.io/badge/Singapore_Computer_Society-Member-blue?style=flat-square)](https://www.scs.org.sg)
+
+<br/>
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/amrita-sagar-7372572b2)
+[![Substack](https://img.shields.io/badge/Substack-Follow_the_journey-FF6719?style=for-the-badge&logo=substack&logoColor=white)](https://amritasagardevops.substack.com)
+[![Email](https://img.shields.io/badge/Email-Say_hello-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:amritasagar2005@gmail.com)
 
 </div>
 
 ---
 
-## 🧠 About Me
+## AI / MLOps — Core Focus
 
-I'm a backend engineer based in Singapore, building **cloud-native APIs** and **AI-integrated systems** with Python, Java, JavaScript, and AWS.
+> The skills powering production AI systems right now.
 
-Currently on a deliberate **9-month learning sprint** — shipping one production-grade project every week and documenting the journey publicly on Substack. By December 2026 I'll have **36 deployed projects**, **3 AWS and Terraform certifications**, and a **production AI SaaS** live.
+**LLM & RAG**
 
-```python
-amrita = {
-    "location":       "Singapore 🇸🇬",
-    "role_target":    "Backend Engineer | Cloud + AI/ML",
-    "languages":      ["Python", "Java", "JavaScript", "TypeScript", "SQL"],
-    "current_focus":  ["FastAPI", "AWS", "Docker", "PostgreSQL"],
-    "certifications": {
-        "june_2026":    "AWS Solutions Architect Associate (SAA-C03)",
-        "august_2026":  "AWS Developer Associate (DVA-C02)",
-        "october_2026": "HashiCorp Terraform Associate",
-    },
-    "shipping":       "1 production project per week — publicly on GitHub",
-    "writing":        "Build-in-public posts every week on Substack",
-    "open_to":        ["Backend Engineer", "Full Stack", "AI/ML Eng", "SG + Remote"],
-}
-```
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square)
+![LlamaIndex](https://img.shields.io/badge/LlamaIndex-6E3FF3?style=flat-square)
+![OpenAI API](https://img.shields.io/badge/OpenAI_API-412991?style=flat-square&logo=openai&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+![pgvector](https://img.shields.io/badge/pgvector-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Pinecone](https://img.shields.io/badge/Pinecone-000000?style=flat-square)
+
+**MLOps & Model Serving**
+
+![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white)
+![Kubeflow](https://img.shields.io/badge/Kubeflow-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![BentoML](https://img.shields.io/badge/BentoML-000000?style=flat-square)
+![Ray Serve](https://img.shields.io/badge/Ray_Serve-028CF0?style=flat-square)
+![DVC](https://img.shields.io/badge/DVC-945DD6?style=flat-square)
 
 ---
 
-## 🛠️ Tech Stack
+## Full Stack
 
 **Languages**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
-![Go](https://img.shields.io/badge/Go_(learning)-00ADD8?style=flat-square&logo=go&logoColor=white)
 
-**Backend Frameworks & Databases**
+**Backend & APIs**
 
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
-![Express](https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
+![gRPC](https://img.shields.io/badge/gRPC-4285F4?style=flat-square&logo=google&logoColor=white)
+![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white)
+
+**Cloud & Infrastructure**
+
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
+![ArgoCD](https://img.shields.io/badge/ArgoCD-EF7B4D?style=flat-square&logo=argo&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
+
+**Data & Observability**
+
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-
-**Cloud & DevOps**
-
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes_(learning)-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform_(learning)-7B42BC?style=flat-square&logo=terraform&logoColor=white)
-
-**AI / ML Integration** *(Phase 3 — August 2026)*
-
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square)
-![OpenAI](https://img.shields.io/badge/OpenAI_API-412991?style=flat-square&logo=openai&logoColor=white)
-![pgvector](https://img.shields.io/badge/pgvector-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Pinecone](https://img.shields.io/badge/Pinecone-000000?style=flat-square)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
 
 ---
 
-## 🗺️ 2026 Roadmap — 9 Months · 36 Projects
 
-| Phase | Period | Focus | Status |
-|-------|--------|-------|--------|
-| **Phase 1** | Apr – May 2026 | Python · FastAPI · PostgreSQL · Docker · CI/CD | 🔵 **Active now** |
-| **Phase 2** | Jun – Jul 2026 | AWS · Terraform · Kubernetes · SAA-C03 cert | ⬜ Upcoming |
-| **Phase 3** | Aug – Sep 2026 | RAG · LLMs · LangChain · Vector DBs · DVA-C02 cert | ⬜ Upcoming |
-| **Phase 4** | Oct – Nov 2026 | 3 major portfolio projects · Terraform cert · Capstone | ⬜ Upcoming |
-| **Phase 5** | December 2026 | Brand polish · Interview prep · Job applications | ⬜ Upcoming |
+## Writing
 
-> **Capstone:** *IntelliHire* — an AI-powered recruitment SaaS using RAG, multi-agent orchestration, and full AWS deployment.
+Shipping backend and AI/MLOps projects every week and writing about the build in public on Substack — system design decisions, MLOps patterns, and lessons from production.
+
+[![Substack](https://img.shields.io/badge/Read_on_Substack-FF6719?style=flat-square&logo=substack&logoColor=white)](https://amritasagardevops.substack.com)
 
 ---
 
-## 🚀 Featured Projects
-
-### ⚡ [task-api](https://github.com/amritasagar/task-api) — Production FastAPI Backend
-> Multi-user task manager — JWT auth, RBAC, PostgreSQL with Alembic migrations, Redis caching, background jobs, full pytest suite. Containerized with Docker Compose.
-
-`Python` `FastAPI` `PostgreSQL` `Redis` `Docker` `JWT` `pytest`
-
----
-
-### ☕ [spring-rest-api](https://github.com/amritasagar/spring-rest-api) — Java Spring Boot REST API
-> Production REST API with Spring Boot, JPA/Hibernate, PostgreSQL, Spring Security JWT, and Maven. Demonstrates Java backend depth alongside Python stack.
-
-`Java` `Spring Boot` `PostgreSQL` `JWT` `Maven` `Docker`
-
----
-
-### 🌐 [node-backend](https://github.com/amritasagar/node-backend) — Node.js + Express Backend
-> Express.js REST API with TypeScript, MongoDB, and rate limiting. Full MVC structure with middleware patterns and Jest testing.
-
-`JavaScript` `TypeScript` `Node.js` `Express` `MongoDB` `Jest`
-
----
-
-### ☁️ [cloud-deploy](https://github.com/amritasagar/cloud-deploy) — AWS ECS + Terraform *(Phase 2)*
-> Full cloud deployment — ECS Fargate, ALB, RDS, ElastiCache, ECR — all as Terraform modules. Zero-downtime CI/CD via GitHub Actions.
-
-`AWS` `Terraform` `ECS` `GitHub Actions` `Docker` `RDS`
-
----
-
-### 🤖 [rag-assistant](https://github.com/amritasagar/rag-assistant) — Document Chat with LLM *(Phase 3)*
-> Upload PDFs → embed → vector search → stream grounded answers with citations. Full RAG pipeline on AWS.
-
-`LlamaIndex` `pgvector` `OpenAI API` `FastAPI` `React` `AWS`
-
-> 📌 **More projects added weekly.** Every repo has a full README with architecture diagram, setup guide, and live demo.
-
----
-
-## ✍️ Latest from my Substack
-
-<!-- SUBSTACK_POSTS_START -->
-
-> 🚀 **My build-in-public blog is live on Substack!**
-> First post dropping soon — covering my 9-month journey to become a
-> Backend + Cloud + AI engineer. Follow along at [https://amritasagardevops.substack.com](https://amritasagardevops.substack.com)
-
-| What's coming | |
-|---|---|
-| 📝 Week 1 | Why I'm committing to this 9-month engineering sprint |
-| ☁️ Week 2 | Building a production FastAPI project from scratch |
-| 🤖 Week 3 | What I learned deploying my first Docker container |
-
-> 🔄 *Auto-updates when posts go live · [Follow on Substack →](https://amritasagardevops.substack.com)*
-
-<!-- SUBSTACK_POSTS_END -->
-
----
-
-## 📊 GitHub Stats
+## GitHub Stats
 
 <div align="center">
-
-<!-- ⚠️ Replace 'amritasagar' below with your ACTUAL GitHub username -->
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=amritasagar&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=818cf8&icon_color=38bdf8&text_color=c9d1d9)
 
@@ -178,31 +108,9 @@ amrita = {
 
 ---
 
-## 🎯 2026 Certifications
-
-| Certification | Target | Status |
-|---------------|--------|--------|
-| AWS Solutions Architect Associate (SAA-C03) | June 2026 | 📖 Studying |
-| AWS Developer Associate (DVA-C02) | August 2026 | ⬜ Upcoming |
-| HashiCorp Terraform Associate 003 | October 2026 | ⬜ Upcoming |
-
----
-
-## 🤝 Connect
-
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/amrita-sagar-7372572b2)
-[![Substack](https://img.shields.io/badge/Substack-Follow_my_journey-FF6719?style=for-the-badge&logo=substack&logoColor=white)](https://amritasagardevops.substack.com)
-[![Email](https://img.shields.io/badge/Email-Say_hello-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:amritasagar2005@gmail.com)
-
-</div>
-
-<br/>
-
-<div align="center">
-
-*⚡ Updated weekly · Building in public · Singapore · 2026*
+*Backend · Cloud · MLOps · AI/ML · Distributed Systems · Singapore · 2026*
 
 ![Profile Views](https://komarev.com/ghpvc/?username=amritasagar&color=818cf8&style=flat-square&label=Profile+Views)
 
